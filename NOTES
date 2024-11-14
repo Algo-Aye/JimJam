@@ -1,0 +1,4 @@
+NEWS CODES 
+
+//SQL QUERY TO GET FOODS BASED ON SEARCH KEYWORD FROM THE USER.
+$sql = "SELECT * FROM tbl_food WHERE title LIKE '%$search%' OR description LIKE '%$search%'";
