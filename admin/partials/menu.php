@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Order Website  - Home Page</title>
     <link rel="stylesheet" href="../css/admin.css">
+    <script src="../js/main.js"></script>
 </head>
 <body>
     <!-- Menu Section starts -->

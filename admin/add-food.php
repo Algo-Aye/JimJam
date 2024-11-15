@@ -228,9 +228,11 @@
                 //4: Redirect with message to Manage food page
                 if($res2 ==TRUE)
                 {
+                    $food_id = mysqli_insert_id($conn);
                     //Data is inserted successfully
-                    $_SESSION["add"] = "<div class='success'>Food Added Successfully.</di>";
-                    header("location:".SITEURL."admin/manage-food.php");
+                    /*$_SESSION["add"] = "<div class='success'>Food Added Successfully.</di>";*/
+                    echo "<script>sendGetRequest('$food_id', '$title');</script>";
+                    /*header("location:".SITEURL."admin/manage-food.php");*/
                 }
 
                 else
