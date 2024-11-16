@@ -23,8 +23,8 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 // Execute cURL session and store response
 $response = curl_exec($ch);
 
-$json_response = json_decode($response);
-$food_response = $json_response[0]->metadata->title;
+//$json_response = json_decode($response);
+$food_response = $response;//$json_response[0]->metadata->title;
 // Check for cURL errors
 if (curl_errno($ch)) {
     echo 'cURL error: ' . curl_error($ch);
